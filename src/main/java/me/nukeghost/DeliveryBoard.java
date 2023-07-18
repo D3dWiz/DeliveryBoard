@@ -119,13 +119,13 @@ public final class DeliveryBoard extends JavaPlugin {
     }
 
     void startTasks() {
-        BukkitTask hourlyTask = new HourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * TimeUtils.convertToSeconds("1m"));
+        BukkitTask hourlyTask = new HourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * 3600000);
         cooldown.put("hourly", System.currentTimeMillis() + 3600000);
 
-        BukkitTask threeHourlyTask = new ThreeHourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * TimeUtils.convertToSeconds("1m"));
+        BukkitTask threeHourlyTask = new ThreeHourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * (3600000 * 3));
         cooldown.put("three-hourly", System.currentTimeMillis() + (3600000 * 3));
 
-        BukkitTask sixHourlyTask = new SixHourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * TimeUtils.convertToSeconds("1m"));
+        BukkitTask sixHourlyTask = new SixHourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * (3600000 * 6));
         cooldown.put("six-hourly", System.currentTimeMillis() + (3600000 * 6));
     }
 

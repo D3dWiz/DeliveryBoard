@@ -35,6 +35,7 @@ public class Message {
     public static String HRD_EMPTY_SUBMISSION;
     public static String HRD_WRONG_SUBMISSION;
     public static String HRD_SUCCESSFUL_SUBMISSION;
+    public static String HRD_ICON_ITEM_DISPLAY;
     public static List<String> HRD_ICON_ITEM_LORE;
     public static String HRD_SUBMIT_ITEM_DISPLAY;
     public static List<String> HRD_SUBMIT_ITEM_LORE;
@@ -44,6 +45,7 @@ public class Message {
     public static String THD_EMPTY_SUBMISSION;
     public static String THD_WRONG_SUBMISSION;
     public static String THD_SUCCESSFUL_SUBMISSION;
+    public static String THD_ICON_ITEM_DISPLAY;
     public static List<String> THD_ICON_ITEM_LORE;
     public static String THD_SUBMIT_ITEM_DISPLAY;
     public static List<String> THD_SUBMIT_ITEM_LORE;
@@ -53,6 +55,7 @@ public class Message {
     public static String SHD_EMPTY_SUBMISSION;
     public static String SHD_WRONG_SUBMISSION;
     public static String SHD_SUCCESSFUL_SUBMISSION;
+    public static String SHD_ICON_ITEM_DISPLAY;
     public static List<String> SHD_ICON_ITEM_LORE;
     public static String SHD_SUBMIT_ITEM_DISPLAY;
     public static List<String> SHD_SUBMIT_ITEM_LORE;
@@ -105,6 +108,7 @@ public class Message {
         HRD_EMPTY_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("HRD_EMPTY_SUBMISSION")));
         HRD_WRONG_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("HRD_WRONG_SUBMISSION")));
         HRD_SUCCESSFUL_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("HRD_SUCCESSFUL_SUBMISSION")));
+        HRD_ICON_ITEM_DISPLAY = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("HRD_ICON_ITEM_DISPLAY")));
         HRD_ICON_ITEM_LORE = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getStringList("HRD_ICON_ITEM_LORE")));
         HRD_SUBMIT_ITEM_DISPLAY = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("HRD_SUBMIT_ITEM_DISPLAY")));
         HRD_SUBMIT_ITEM_LORE = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getStringList("HRD_SUBMIT_ITEM_LORE")));
@@ -114,6 +118,7 @@ public class Message {
         THD_EMPTY_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("THD_EMPTY_SUBMISSION")));
         THD_WRONG_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("THD_WRONG_SUBMISSION")));
         THD_SUCCESSFUL_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("THD_SUCCESSFUL_SUBMISSION")));
+        THD_ICON_ITEM_DISPLAY = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("THD_ICON_ITEM_DISPLAY")));
         THD_ICON_ITEM_LORE = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getStringList("THD_ICON_ITEM_LORE")));
         THD_SUBMIT_ITEM_DISPLAY = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("THD_SUBMIT_ITEM_DISPLAY")));
         THD_SUBMIT_ITEM_LORE = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getStringList("THD_SUBMIT_ITEM_LORE")));
@@ -123,6 +128,7 @@ public class Message {
         SHD_EMPTY_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("SHD_EMPTY_SUBMISSION")));
         SHD_WRONG_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("SHD_WRONG_SUBMISSION")));
         SHD_SUCCESSFUL_SUBMISSION = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("SHD_SUCCESSFUL_SUBMISSION")));
+        SHD_ICON_ITEM_DISPLAY = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("SHD_ICON_ITEM_DISPLAY")));
         SHD_ICON_ITEM_LORE = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getStringList("SHD_ICON_ITEM_LORE")));
         SHD_SUBMIT_ITEM_DISPLAY = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getString("SHD_SUBMIT_ITEM_DISPLAY")));
         SHD_SUBMIT_ITEM_LORE = ColorUtils.translateHexColorCodes("<#", ">", ColorUtils.translateColorCodes(lang.getStringList("SHD_SUBMIT_ITEM_LORE")));

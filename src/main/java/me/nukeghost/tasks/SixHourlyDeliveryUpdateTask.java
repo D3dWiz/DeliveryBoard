@@ -16,13 +16,8 @@ public class SixHourlyDeliveryUpdateTask extends BukkitRunnable {
 
     @Override
     public void run() {
-        long startTime = cooldown.get("six-hourly");
-        long currentTime = System.currentTimeMillis();
-        long elapsedTime = currentTime - startTime;
-        if (elapsedTime >= (3600000 * 6)) { // 1 hour = 3600000 milliseconds
-            cooldown.put("six-hourly", System.currentTimeMillis() + (3600000 * 6));
-            DeliveryBoard.setThreeHourlyItem(GenerationHandler.generateDeliveryItem("six-hourly"));
-            DeliveryBoard.sixHourlyCompletedPlayerList.clear();
-        }
+        cooldown.put("six-hourly", System.currentTimeMillis() + (3600000 * 6));
+        DeliveryBoard.setThreeHourlyItem(GenerationHandler.generateDeliveryItem("six-hourly"));
+        DeliveryBoard.sixHourlyCompletedPlayerList.clear();
     }
 }

@@ -16,14 +16,9 @@ public class HourlyDeliveryUpdateTask extends BukkitRunnable {
 
     @Override
     public void run() {
-        long startTime = cooldown.get("hourly");
-        long currentTime = System.currentTimeMillis();
-        long elapsedTime = currentTime - startTime;
-        if (elapsedTime >= 3600000) { // 1 hour = 3600000 milliseconds
-            cooldown.put("hourly", System.currentTimeMillis() + 3600000);
-            DeliveryBoard.setHourlyItem(GenerationHandler.generateDeliveryItem("hourly"));
-            DeliveryBoard.hourlyCompletedPlayerList.clear();
-        }
+        cooldown.put("hourly", System.currentTimeMillis() + 3600000);
+        DeliveryBoard.setHourlyItem(GenerationHandler.generateDeliveryItem("hourly"));
+        DeliveryBoard.hourlyCompletedPlayerList.clear();
 
     }
 }

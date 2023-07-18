@@ -77,8 +77,9 @@ public class HourlyDeliveryMenu extends Menu {
         ItemStack detailsItem = super.INFO;
         ItemMeta detailsMeta = detailsItem.getItemMeta();
 
-        //List<String> detailsLore = new ArrayList<>(); //instead of creating, get it from lang lol
+        String detailsName = Message.HRD_ICON_ITEM_DISPLAY;
         List<String> detailsLore = Message.HRD_ICON_ITEM_LORE;
+        detailsMeta.setDisplayName(detailsName);
         detailsMeta.setLore(detailsLore);
         detailsItem.setItemMeta(detailsMeta);
 

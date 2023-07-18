@@ -78,7 +78,9 @@ public class SixHourlyDeliveryMenu extends Menu {
         ItemMeta detailsMeta = detailsItem.getItemMeta();
 
         //List<String> detailsLore = new ArrayList<>();//
+        String detailsName = Message.SHD_ICON_ITEM_DISPLAY;
         List<String> detailsLore = Message.SHD_ICON_ITEM_LORE;
+        detailsMeta.setDisplayName(detailsName);
         detailsMeta.setLore(detailsLore);
         detailsItem.setItemMeta(detailsMeta);
 

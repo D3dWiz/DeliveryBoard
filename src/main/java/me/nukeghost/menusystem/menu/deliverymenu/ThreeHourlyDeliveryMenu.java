@@ -77,8 +77,9 @@ public class ThreeHourlyDeliveryMenu extends Menu {
         ItemStack detailsItem = super.INFO;
         ItemMeta detailsMeta = detailsItem.getItemMeta();
 
-        //List<String> detailsLore = new ArrayList<>();//
+        String detailsName = Message.THD_ICON_ITEM_DISPLAY;
         List<String> detailsLore = Message.THD_ICON_ITEM_LORE;
+        detailsMeta.setDisplayName(detailsName);
         detailsMeta.setLore(detailsLore);
         detailsItem.setItemMeta(detailsMeta);
 
