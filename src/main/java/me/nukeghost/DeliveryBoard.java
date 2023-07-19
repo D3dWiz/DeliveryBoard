@@ -20,6 +20,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
 import java.util.ArrayList;
@@ -119,13 +120,13 @@ public final class DeliveryBoard extends JavaPlugin {
     }
 
     void startTasks() {
-        BukkitTask hourlyTask = new HourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * 3600000);
+        BukkitTask HourlyDeliveryUpdateTask = new HourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * 3600);
         cooldown.put("hourly", System.currentTimeMillis() + 3600000);
 
-        BukkitTask threeHourlyTask = new ThreeHourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * (3600000 * 3));
+        BukkitTask threeHourlyTask = new ThreeHourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * (3600 * 3));
         cooldown.put("three-hourly", System.currentTimeMillis() + (3600000 * 3));
 
-        BukkitTask sixHourlyTask = new SixHourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * (3600000 * 6));
+        BukkitTask sixHourlyTask = new SixHourlyDeliveryUpdateTask(this).runTaskTimer(this,0L, 20L * (3600 * 6));
         cooldown.put("six-hourly", System.currentTimeMillis() + (3600000 * 6));
     }
 

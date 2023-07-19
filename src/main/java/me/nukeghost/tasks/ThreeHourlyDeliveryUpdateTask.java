@@ -16,7 +16,8 @@ public class ThreeHourlyDeliveryUpdateTask extends BukkitRunnable {
 
     @Override
     public void run() {
-        cooldown.put("six-hourly", System.currentTimeMillis() + (3600000 * 3));
+        long currentTime = System.currentTimeMillis();
+        cooldown.put("three-hourly", currentTime + 3600000 * 3);
         DeliveryBoard.setThreeHourlyItem(GenerationHandler.generateDeliveryItem("three-hourly"));
         DeliveryBoard.sixHourlyCompletedPlayerList.clear();
     }

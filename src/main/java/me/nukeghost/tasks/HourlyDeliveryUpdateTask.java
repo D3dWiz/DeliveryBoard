@@ -16,7 +16,8 @@ public class HourlyDeliveryUpdateTask extends BukkitRunnable {
 
     @Override
     public void run() {
-        cooldown.put("hourly", System.currentTimeMillis() + 3600000);
+        long currentTime = System.currentTimeMillis();
+        cooldown.put("hourly", currentTime + 3600000);
         DeliveryBoard.setHourlyItem(GenerationHandler.generateDeliveryItem("hourly"));
         DeliveryBoard.hourlyCompletedPlayerList.clear();
 
